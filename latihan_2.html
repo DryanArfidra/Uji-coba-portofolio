@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Latihan Grid Responsif</title>
+  <style>
+    /* Reset & dasar */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .profile-card {
+      width: 250px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid black;
+      border-radius: 10px;
+      background-color: honeydew;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+    }
+    .profile-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+      object-fit: cover;
+      margin-bottom: 30px;
+      border: 1px solid black;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #007BFF;
+      padding: 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 30px;
+      background-color: #f9f9f9;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    nav a {
+      color: red;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    h2 {
+      text-align: center;
+      background-color: #fafafa;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .projects-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .project {
+      width: 300px;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .project img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .project h4 {
+      margin: 15px 0 10px;
+    }
+
+    .project p {
+      color: #555;
+      font-size: 14px;
+    }
+
+    .hubungi-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #007BFF;
+      color: white;
+      padding: 12px 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      z-index: 1000;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #fafafa;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: inherit;
+    }
+
+    form button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    
+  </style>
+</head>
+<body>
+    <div class="profile-card">
+    <img src="../day3/oi.jpg" alt="Foto Profil">
+    <h2>Fadhal Aryan</h2>
+    <p>Bandung, 25 maret 2025</p>
+  </div>
+
+  <!-- Navigasi -->
+  <nav>
+    <a href="#">Beranda</a>
+    <a href="#">Proyek</a>
+    <a href="#">Kontak</a>
+  </nav>
+
+<section id="proyek">
+    <h2>Proyek Saya</h2>
+    <a href=""></a>
+    <div class="projects-container">
+      <div class="project">
+        <img src="../day4/proyek1.jpeg" alt="Proyek 1">
+        <h4>Skill</h4>
+        <p>Web informatif dengan struktur data dan budaya lokal.</p>
+      </div>
+      <div class="project">
+        <img src="../day4/proyek2.jpeg" alt="Proyek 2">
+        <h4>Proyek 2</h4>
+        <p>Fokus pada desain elegan dan navigasi smooth.</p>
+      </div>
+      <div class="project">
+        <img src="../day4/proyek3.jpeg" alt="Proyek 3">
+        <h4>Proyek 3</h4>
+        <p>Web dengan ilustrasi dan narasi edukatif.</p>
+      </div>
+    </div>
+  </section>
+
+  <form>
+    <h3>Form Kontak</h3>
+    <label for="nama">Nama:</label>
+    <input type="text" placeholder="Masukan nama anda" name="nama" required>
+
+    <label for="email">Email:</label>
+    <input type="email" placeholder="Masukan" name="email anda" required>
+
+    <label for="pesan">Pesan:</label>
+    <textarea id="pesan" placeholder="masukan pesan anda.." rows="4" required></textarea>
+
+    <button type="submit">Kirim</button>
+  </form>
+
+  <button class="hubungi-btn">Hubungi Saya</button>
+
+</body>
+</html>

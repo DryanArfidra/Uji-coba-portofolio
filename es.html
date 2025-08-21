@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ucapan Selamat Ulang Tahun</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #ff69b4;
+        }
+        p {
+            font-size: 20px;
+            color: #333;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff1493;
+        }
+            
+    </style>
+</head>
+<body>
+
+    <h1>Ucapan Selamat Ulang Tahun</h1>
+    <p id="ucapan"></p>
+    <input type="text" id="namaIbu" placeholder="Masukkan nama Ibu" />
+    <button onclick="tampilkanUcapan()">Kirim Ucapan</button>
+
+    <script>
+        function tampilkanUcapan() {
+            var namaIbu = document.getElementById("namaIbu").value;
+            var ucapan = `Selamat Ulang Tahun, ${namaIbu}! 🎉<br>
+                          Semoga hari ini dipenuhi dengan kebahagiaan dan cinta.<br>
+                          Terima kasih telah menjadi ibu yang luar biasa.<br>
+                          Semoga semua impian dan harapanmu tercapai!<br>
+                          Kami mencintaimu selamanya! ❤️`;
+            document.getElementById("ucapan").innerHTML = ucapan;
+        }
+    </script>
+
+</body>
+</html>
